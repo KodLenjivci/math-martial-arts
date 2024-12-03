@@ -11,12 +11,14 @@ namespace DefaultNamespace
     
     class Algebra
     {
+
+        static Random rand = new Random();
         ////Medium od 2 do 4 razreda
         //ax+b=c
         //moras x da dobijes
         static string SolveEquation()
         {
-            Random rand = new Random();
+            
 
             //generisi random
             int a = rand.Next(1, 1000);
@@ -35,7 +37,7 @@ namespace DefaultNamespace
         //Easy od 2 do 4 razreda
         static string ConvertHoursToMinutes()
         {
-            Random rand = new Random();
+            
 
             int hours = rand.Next(1,24);
 
@@ -45,7 +47,7 @@ namespace DefaultNamespace
         //Veci broj 
         //Easy od 2 do 4 razreda
         static string WhichNumberIsBigger(){
-            Random rand = new Random();
+            
 
             int a = rand.Next(1,200);
             int b = rand.Next(1,200);
@@ -105,7 +107,7 @@ namespace DefaultNamespace
         //isto kao prethodni ali mu je dao klikere samo je oduzimanje u pitanju
         //Medium od 2 do 4 razreda Medium
         static string GivingStuffToEachOther(){
-            Random rand = new Random();
+            
 
             //100 imena
             List<string> names = new List<string>;
@@ -140,7 +142,7 @@ namespace DefaultNamespace
         //Izracunaj izraz
         //Medium od 2 do 4 razreda
         static string CalculateTheExpression(){
-            Random rand = new Random();
+            
             int a = rand.Next(1, 200);
             int b = rand.Next(1, 200);
             int c = rand.Next(1, 200);
@@ -177,7 +179,7 @@ namespace DefaultNamespace
         //medium
         static string CalculateTheExpressionForThirdGrade()
         {
-            Random rand = new Random();
+            
             int a = rand.Next(1, 200);
             int b = rand.Next(1, 200);
             int c = rand.Next(1, 200);
@@ -231,8 +233,10 @@ namespace DefaultNamespace
         //easy od 2 do 4 razreda
         //koji broj nedostaje
         static string MissingNumber(){
+            
+
             int a = rand.Next(1, 200);
-            int b = b-1;
+            int b = a-1;
             int c = a+1;
 
             return $"Koji broj nedostaje {b} _ {c}, Rešenje je: {a}"
@@ -241,6 +245,8 @@ namespace DefaultNamespace
         //easy od 2 do 4 razreda
         //konvertuj metre u centimetre
         static string ConvertMeterToCentimetre(){
+            
+            
             int a = rand.Next(1,1000);
 
             return $"Koliko centimetara je {a} metara? Rešenje je: {a*100}"
@@ -249,6 +255,8 @@ namespace DefaultNamespace
         //easy od 2 do 4 razreda
         //konvertuj metre u milimetre
         static string ConvertMeterToMilimetre(){
+            
+            
             int a = rand.Next(1,1000);
 
             return $"Koliko milimetara je {a} metara? Rešenje je: {a*1000}"
@@ -257,6 +265,8 @@ namespace DefaultNamespace
         //easy od 2 do 4 razreda
         //konvertuj metre u decimetar
         static string ConvertMeterToDecimetre(){
+            
+            
             int a = rand.Next(1,1000);
 
             return $"Koliko decimetara je {a} metara? Rešenje je: {a*10}"
@@ -268,14 +278,5 @@ namespace DefaultNamespace
     
     }
 
-    /*class Program
-    {
-        static void Main(string[] args)
-        {
-            string rez = WhoGotMore();
-            Console.WriteLine(rezultat);
-
-
-        }
-    }*/
+    
 }
