@@ -23,6 +23,7 @@ public class FightManager : MonoBehaviour
 
     public int damage;
 
+
     private void Start()
     {
         setNewRound();
@@ -47,18 +48,17 @@ public class FightManager : MonoBehaviour
             Destroy(player2);
         }
 
-
     }
 
 
     private void setNewRound()//zapocinjemo novu rundu
     {
-        correctButtonIndex = Random.Range(0, buttons.Length);
-        for (int i = 0; i < buttons.Length; i++)
-        {
+         correctButtonIndex = Random.Range(0, buttons.Length);
+         for (int i = 0; i < buttons.Length; i++)
+         {
             int buttonIndex = i;
             buttons[i].onClick.RemoveAllListeners();//brise svaki listenera sa buttna
-        }
+         }
 
         if (p1)
         {
@@ -68,7 +68,6 @@ public class FightManager : MonoBehaviour
         {
             addingEventListeners("P2");
         }
-        
     }
 
     void addingEventListeners(string player)
@@ -139,5 +138,6 @@ public class FightManager : MonoBehaviour
         }
 
         setNewRound();
+        
     }
 }
