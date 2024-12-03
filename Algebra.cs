@@ -1,5 +1,5 @@
-//TODO: algebra od 2 do 4 razreda je gotova treba sve proveriti i mozda dodati po nesto, ostala je algebra od 5 do 8 
-//TODO: geometrija ide u drugi fajl Geometry.cs
+//TODO: ostala je algebra od 5 do 8 
+
 
 using System;
 using System.Collections;
@@ -59,9 +59,9 @@ namespace DefaultNamespace
             }
 
             if(b > a){
-                return $"Koji broj je veći{a} ili {b}\n Rešenje je: {b}";
+                return $"Koji broj je veći {a} ili {b}?  Rešenje je: {b}";
             } else {
-                return $"Koji broj je veći{a} ili {b}\n Rešenje je: {a}";
+                return $"Koji broj je veći {a} ili {b}?  Rešenje je: {a}";
             }
 
 
@@ -73,8 +73,7 @@ namespace DefaultNamespace
         //Ko ima vise klikera
         //Medium od 2 do 4 razreda Medium
         static string HowMuchTheyGot(){
-            Random rand = new Random();
-
+            
             //100 imena
             List<string> names = new List<string>;
             {
@@ -131,11 +130,10 @@ namespace DefaultNamespace
             string name2 = names[rand.Next(names.Count)];
 
             int a = rand.Next(1,100);
-            int b = rand.Next(a,200);
-            int c = rand.Next(0,a)
+            int c = rand.Next(0,a);
             
-
-            return $"{name1} ima {a} klikera, a {name2} {b} klikera. {name1} je poklonio {c} klikera. Koliko mu je ostalo {name1} klikera?, Rešenje je: {b-c}"
+            
+            return $"{name1} ima {a} klikera, poklonio je {c} klikera. Koliko mu je ostalo? Rešenje je: {a - c}";
         }
 
 
@@ -173,10 +171,10 @@ namespace DefaultNamespace
             }
 
         return $"Izraz: {expression}, Rešenje je: {result}";
-    }
+        }
 
         //racunanje samo za 3 razred skole 
-        //medium
+        //hard od 3 do 4
         static string CalculateTheExpressionForThirdGrade()
         {
             
@@ -242,41 +240,35 @@ namespace DefaultNamespace
             return $"Koji broj nedostaje {b} _ {c}, Rešenje je: {a}"
         }
 
+        //glavna metoda za konvertovanje metara u druge jedinice
         //easy od 2 do 4 razreda
-        //konvertuj metre u centimetre
-        static string ConvertMeterToCentimetre(){
+        static string ConvertUnits(string unit, int factor)
+        {
             
-            
-            int a = rand.Next(1,1000);
+            int meters = rand.Next(1, 1000); 
 
-            return $"Koliko centimetara je {a} metara? Rešenje je: {a*100}"
+            int result = meters * factor; 
+            return $"Koliko {unit} je {meters} metara? Rešenje je: {result}";
         }
 
-        //easy od 2 do 4 razreda
-        //konvertuj metre u milimetre
-        static string ConvertMeterToMilimetre(){
-            
-            
-            int a = rand.Next(1,1000);
-
-            return $"Koliko milimetara je {a} metara? Rešenje je: {a*1000}"
+        //wrapper metode za konvertovanje jedinica
+        //centimetre
+        static string ConvertMeterToCentimetre()
+        {
+            return ConvertUnits("centimetara", 100); 
         }
-
-        //easy od 2 do 4 razreda
-        //konvertuj metre u decimetar
-        static string ConvertMeterToDecimetre(){
-            
-            
-            int a = rand.Next(1,1000);
-
-            return $"Koliko decimetara je {a} metara? Rešenje je: {a*10}"
+        //milimetre
+        static string ConvertMeterToMilimetre()
+        {
+            return ConvertUnits("milimetara", 1000); 
         }
-
-
+        //decimetre
+        static string ConvertMeterToDecimetre()
+        {
+            return ConvertUnits("decimetara", 10); 
+        }
 
 
     
     }
-
-    
 }
