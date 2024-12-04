@@ -13,6 +13,40 @@ namespace DefaultNamespace
     {
 
         static Random rand = new Random();
+        
+        //hard od 2 do 4 razreda
+        static string FuelStationTask()
+        {   
+            int cars = rand.Next(800, 1000); 
+            int pump12 = rand.Next(400, cars - 200); //prva i druga pumpa
+            int pump23 = rand.Next(400, cars - 200); //druga i treca pumpa
+
+            //koliko automobila ima na svakoj pumpi
+            int pump2 = pump12 + pump23 - totalCars;
+            int pump1 = pump12 - pump2;
+            int pump3 = pump23 - pump2;
+
+            return $"Na tri pumpe danas je gorivo tocilo ukupno {cars} automobila. Na prvoj i drugoj pumpi je bilo {pump12} automobila, a na drugoj i trećoj {pump23}. Broj automobila na svakoj pumpi je: prva pumpa - {pump1}, druga pumpa - {pump2}, treća pumpa - {pump3}.";
+        }
+
+        
+        //2 razred easy
+        //saberi 3 broja
+        static string SumThreeNumbers()
+        {
+    
+
+            int a = rand.Next(1, 100); 
+            int b = rand.Next(1, 100); 
+            int c = rand.Next(1, 100); 
+
+            int result = a + b + c;
+
+            return $"Saberi sledeće brojeve {a}, {b} i {c}. Rešenje je: {result}.";
+        }
+    
+
+
         ////Medium od 2 do 4 razreda
         //ax+b=c
         //moras x da dobijes
@@ -268,6 +302,8 @@ namespace DefaultNamespace
             return ConvertUnits("decimetara", 10); 
         }
 
+
+        
 
     
     }

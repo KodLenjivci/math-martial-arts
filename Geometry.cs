@@ -10,10 +10,6 @@ namespace DefaultNamespace
         static Random rand = new Random();
 
 
-
-        //$"Izraz: {expression}, Rešenje je: {result}";
-
-
         //easy od 5 do 8
         //Racuna povrsinu kruga
         static string CircleArea()
@@ -95,7 +91,7 @@ namespace DefaultNamespace
             return $"Izračunaj površinu kvadra sa širinom {a}, visinom {b} i dubinom {c}. Rešenje je: {result}";
         }
 
-        //easy od 5 do 8 razreda
+        //easy od 2 do 8 razreda
         //kakav je ugao(prav,ostar,tup)
         static string WhatAngle(){
             int a  = rand.Next(1,180);
@@ -150,6 +146,71 @@ namespace DefaultNamespace
             
             return $"Izračunaj hipotenuzu pravouglog trougla sa katetama {a} i {b}. Rešenje je: {c:F2}";
         }
+
+
+
+        //medium 8 razreda
+        //zapremina prizme
+        static string PrismVolume()
+        {
+    
+            int a = rand.Next(1, 20); //stranica a
+            int h = rand.Next(1, 20); //Visina prizme
+
+            double v = a * h;
+            
+            return $"Izračunaj zapreminu prizme ako je stranica a {a} i visina {h}. Rešenje je: {v}";
+        }
+
+
+        //medium 8 razred
+        //zapremina valjka
+        static string CylinderVolume()
+        {
+    
+            int r = rand.Next(1, 450); //Poluprečnik osnove
+            int h = rand.Next(1, 450); //Visina valjka
+
+            double v = Math.PI * (r*r) * h;
+            
+            return $"Izračunaj zapreminu valjka sa poluprečnikom {r} i visinom {h}. Rešenje je: {Math.Round(volume, 2)}";
+        }
+
+        //hard od 5 do 8
+        //izracunaj dijagonale romba
+        static string CalculateRhombusDiagonals()
+        {
+    
+
+    
+            int ratio1 = rand.Next(2, 10); 
+            int ratio2 = rand.Next(2, 10); 
+
+    
+            while (ratio1 == ratio2)
+                ratio2 = rand.Next(2, 10);
+
+    
+            
+            int p = rand.Next(100, 1000); 
+
+    
+            int sumRatios = ratio1 + ratio2;
+            
+            double k = Math.Sqrt((2.0 * p) / (ratio1 * ratio2));
+
+    
+            double d1 = ratio1 * k;
+            double d2 = ratio2 * k;
+
+            
+           return $"Dijagonale romba stoje u razmeri {ratio1}:{ratio2}, a njegova površina je {p} m². Izračunaj dužine dijagonala romba.\n\n" +
+           $"Rešenje:\n" +
+           $"d1 = {ratio1}k = {Math.Round(d1, 2)} m\n" +
+           $"d2 = {ratio2}k = {Math.Round(d2, 2)} m";
+        }
+
+        
 
         
     }
