@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0aaf225a09cf2cd4fb49347b11af727a
+guid: cd2fe97400b50cf4eb371d43e4382223
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,17 +141,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 30
+        width: 33
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d0d15a8e096f804884e7854139d1086
-      internalID: 798890168
+      spriteID: 84285b96cd4ae0a4d9fce6092d164029
+      internalID: 2109911927
       vertices: []
       indices: 
       edges: []
@@ -160,19 +160,19 @@ TextureImporter:
       name: ginger_magic-Sheet_1
       rect:
         serializedVersion: 2
-        x: 45
+        x: 33
         y: 0
-        width: 30
+        width: 33
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 187d288b4e91e1f44a1ebee5d203afd9
-      internalID: -1498486896
+      spriteID: f1ad3a59e715d5d4fa5763ff0ca1a63d
+      internalID: -642594642
       vertices: []
       indices: 
       edges: []
@@ -181,19 +181,19 @@ TextureImporter:
       name: ginger_magic-Sheet_2
       rect:
         serializedVersion: 2
-        x: 90
+        x: 66
         y: 0
-        width: 30
+        width: 33
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b455ce85b5de8fc47a82a5bfae353e61
-      internalID: -846205907
+      spriteID: fd32b2c83f541ec489396d94a6e16f67
+      internalID: -318390862
       vertices: []
       indices: 
       edges: []
@@ -202,19 +202,19 @@ TextureImporter:
       name: ginger_magic-Sheet_3
       rect:
         serializedVersion: 2
-        x: 135
+        x: 99
         y: 0
-        width: 30
+        width: 33
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b0fec3e4f0e6fc40ace15d7f09fc2a9
-      internalID: 1126997631
+      spriteID: c148d7f11aecaab4797688d143048862
+      internalID: 1810848850
       vertices: []
       indices: 
       edges: []
@@ -223,19 +223,40 @@ TextureImporter:
       name: ginger_magic-Sheet_4
       rect:
         serializedVersion: 2
-        x: 180
+        x: 132
         y: 0
-        width: 30
+        width: 33
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67a472e4421f1b841920eb4f67d5bd61
-      internalID: 1695224145
+      spriteID: b4cb300f79ae7924b8c30a8603e48ca0
+      internalID: 2124611687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ginger_magic-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045c9acbb4f716d41be34c031ef27b27
+      internalID: -731237561
       vertices: []
       indices: 
       edges: []
@@ -244,19 +265,40 @@ TextureImporter:
       name: ginger_magic-Sheet_6
       rect:
         serializedVersion: 2
-        x: 225
+        x: 198
         y: 0
-        width: 30
+        width: 33
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8c405e5c5cdf6447bc81da3a46e7c6b
-      internalID: 1600800065
+      spriteID: dd51ce49febe9e248ba624d175e70f1d
+      internalID: 207015417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ginger_magic-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a757cbce4a274454e8603bc8ce16189a
+      internalID: 821683004
       vertices: []
       indices: 
       edges: []
@@ -265,19 +307,40 @@ TextureImporter:
       name: ginger_magic-Sheet_8
       rect:
         serializedVersion: 2
-        x: 270
+        x: 264
         y: 0
-        width: 30
+        width: 33
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b620f6b6348bf934095ac91e068eb2ac
-      internalID: 2029284444
+      spriteID: 123fbe6ed06ac6e4b8b932ed1a5925fc
+      internalID: -77409010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ginger_magic-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d404b3e8656a54da009484d4e84439
+      internalID: 898993238
       vertices: []
       indices: 
       edges: []
@@ -286,19 +349,40 @@ TextureImporter:
       name: ginger_magic-Sheet_10
       rect:
         serializedVersion: 2
-        x: 315
+        x: 330
         y: 0
-        width: 30
+        width: 33
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4972061c9be8a549a645afdf38c82d1
-      internalID: -1972609174
+      spriteID: 06b0ac1c8b1ba964397798fbc45e426f
+      internalID: -962213853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ginger_magic-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 0
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42042c37a9997343b71a698b41e8ab2
+      internalID: -1938035551
       vertices: []
       indices: 
       edges: []
@@ -307,124 +391,40 @@ TextureImporter:
       name: ginger_magic-Sheet_12
       rect:
         serializedVersion: 2
-        x: 360
+        x: 396
         y: 0
-        width: 30
+        width: 33
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bc6aa608ac05a04381561cae305d234
-      internalID: -888041764
+      spriteID: e263d8766cbd95143a05eedc207c5c33
+      internalID: 760753877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ginger_magic-Sheet_14
+      name: ginger_magic-Sheet_13
       rect:
         serializedVersion: 2
-        x: 405
+        x: 429
         y: 0
-        width: 30
+        width: 33
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3284074c42ad0644ea168454e0300e19
-      internalID: -815269733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ginger_magic-Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 0
-        width: 30
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35100e27ebd224547b08f9490582fccd
-      internalID: 1727203082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ginger_magic-Sheet_18
-      rect:
-        serializedVersion: 2
-        x: 495
-        y: 0
-        width: 30
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fbec552690afcd498bae797a9eb63b8
-      internalID: -1901818508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ginger_magic-Sheet_20
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 0
-        width: 30
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b8473ec67141014ebc58c4847c76afd
-      internalID: -1792736194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ginger_magic-Sheet_22
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 0
-        width: 30
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec6782b5c276fee44a185573eaa84dd3
-      internalID: 1479587088
+      spriteID: a1ab079f863fb3844be3863ca3d2d2c8
+      internalID: -1939467852
       vertices: []
       indices: 
       edges: []
@@ -432,7 +432,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 267785c96b1e47b43a694e2f7aba556a
+    spriteID: 6a3d8d53d759bdc418919f7b91faede1
     internalID: 0
     vertices: []
     indices: 
@@ -440,29 +440,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ginger_magic-Sheet_0: 798890168
-      ginger_magic-Sheet_1: -1498486896
-      ginger_magic-Sheet_10: -1972609174
-      ginger_magic-Sheet_11: 184268152
-      ginger_magic-Sheet_12: -888041764
-      ginger_magic-Sheet_13: 1414056181
-      ginger_magic-Sheet_14: -815269733
-      ginger_magic-Sheet_15: -1797310103
-      ginger_magic-Sheet_16: 1727203082
-      ginger_magic-Sheet_17: 1475778927
-      ginger_magic-Sheet_18: -1901818508
-      ginger_magic-Sheet_19: -1363610806
-      ginger_magic-Sheet_2: -846205907
-      ginger_magic-Sheet_20: -1792736194
-      ginger_magic-Sheet_21: 164165534
-      ginger_magic-Sheet_22: 1479587088
-      ginger_magic-Sheet_3: 1126997631
-      ginger_magic-Sheet_4: 1695224145
-      ginger_magic-Sheet_5: -1251312657
-      ginger_magic-Sheet_6: 1600800065
-      ginger_magic-Sheet_7: -648236216
-      ginger_magic-Sheet_8: 2029284444
-      ginger_magic-Sheet_9: -2056079337
+      ginger_magic-Sheet_0: 2109911927
+      ginger_magic-Sheet_1: -642594642
+      ginger_magic-Sheet_10: -962213853
+      ginger_magic-Sheet_11: -1938035551
+      ginger_magic-Sheet_12: 760753877
+      ginger_magic-Sheet_13: -1939467852
+      ginger_magic-Sheet_2: -318390862
+      ginger_magic-Sheet_3: 1810848850
+      ginger_magic-Sheet_4: 2124611687
+      ginger_magic-Sheet_5: -731237561
+      ginger_magic-Sheet_6: 207015417
+      ginger_magic-Sheet_7: 821683004
+      ginger_magic-Sheet_8: -77409010
+      ginger_magic-Sheet_9: 898993238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
