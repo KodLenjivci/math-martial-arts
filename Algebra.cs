@@ -302,8 +302,136 @@ namespace DefaultNamespace
             return ConvertUnits("decimetara", 10); 
         }
 
+    
+        //medium 5.
+        static string generatorFi()
+        {
+            int tipZad = rand.Next(1, 2);
+            if (tipZad == 1)
+            {
+                //tip 1 n/m + p * s/t
+                //tip 2 n/m + p/q - s/t
+                //tip 3 n/m - p + s/t
+                int tipI = rand.Next(1, 3);
+                if (tipI == 1)
+                {
+                    int n = rand.Next(2, 4);
+                    int m = rand.Next(5, 9);
+                    int p = rand.Next(1, 5);
+                    int s = rand.Next(1, 6);
+                    int t = rand.Next(7, 9);
 
-        
+                    return $"Izracunaj: {n} / {m} + {p} * {s} / {t}, resenje je: {((n * 1.0 / m) + p * 1.0 * (s * 1.0 / t))}";
+                }
+                else if (tipI == 2)
+                {
+                    int n = rand.Next(2, 4);
+                    int m = rand.Next(5, 9);
+                    int p = rand.Next(1, 5);
+                    int q = rand.Next(6, 9);
+                    int s = rand.Next(1, 6);
+                    int t = rand.Next(7, 9);
+
+                    return $"Izracunaj: {n} / {m} + {p} / {q} - {s} / {t}, resenje je: {((n * 1.0 / m) + (p * 1.0 / q) - (s * 1.0 / t))}";
+                }
+                else
+                {
+                    int n = rand.Next(2, 4);
+                    int m = rand.Next(5, 9);
+                    int p = rand.Next(1, 5);
+                    int s = rand.Next(1, 6);
+                    int t = rand.Next(7, 9);
+                
+                    return $"Izracunaj: {n} / {m} - {p} + {s} / {t}, resenje je: {((n * 1.0 / m) - p * 1.0 + (s * 1.0 / t))}";
+                }
+            }
+            else
+            {
+                //tip 1 x + p / q = n / m
+                //tip 2 p / q - x = n / m
+                int tipJ = rand.Next(1, 2);
+                if (tipJ == 1)
+                {
+                    int n = rand.Next(1, 4);
+                    int m = rand.Next(5, 9);
+                    int p = rand.Next(1, 5);
+                    int q = rand.Next(6, 9);
+
+                    return $"Izracunaj: x + {p} / {q} = {n} / {m}, resenje je: {(n * 1.0 / m) - (p * 1.0 / q)}";
+                }
+                else
+                {
+                    int n = rand.Next(1, 4);
+                    int m = rand.Next(5, 9);
+                    int p = rand.Next(1, 5);
+                    int q = rand.Next(6, 9);
+
+                    return $"Izracunaj: {p} / {q} - x = {n} / {m}, resenje je: {(p * 1.0 / q) - (n * 1.0 / m)}";
+                }
+            }
+
+        }
+
+        //easy 6.
+        static string generatorSi()
+        {
+            int tipZad = rand.Next(1, 2);
+            //tip 1 -p + q
+            //tip 2 -p + x = q
+            if (tipZad == 1)
+            {
+                int p = rand.Next(1, 100);
+                int q = rand.Next(1, 100);
+                int znak = rand.Next(1, 2);
+                if (znak == 1)
+                {
+
+                    return $"Izracunaj: - {p} + {q}, resenje je: {(-p + q)}";
+                }
+                else
+                {
+
+                    return $"Izracunaj: {p} - {q}, resenje je: {(p - q)}";
+                }
+            }
+            else
+            {
+                int p = rand.Next(1, 100);
+                int q = rand.Next(1, 100);
+            
+                return $"Izracunaj: - {p} + x = {q}, resenje je: {(p + q)}";
+            }
+        }
+
+        //hard 7.
+        static string generatorSe()
+        {
+            int tipZad = rand.Next(1, 2);
+            //tip 1 ax^2 + bx - c (+/-) px^2 - qx + r
+            //tip 2 (a + b) ^ 2 = a^2 + 2ab + b^2 
+            if (tipZad == 1)
+            {
+                int a = -rand.Next(1, 15);
+                int b = rand.Next(1, 15);
+                int c = -rand.Next(1, 15);
+                int p = rand.Next(1, 15);
+                int q = -rand.Next(1, 15);
+                int r = rand.Next(1, 15);
+                int[] pol1 = { a, b, c };
+                int[] pol2 = { p, q, r };
+                int[] polR = { a + p, b + q, c + r };
+
+                return $"Izracunaj: (({a}) x^2 + ({b}) x + ({c})) + (({p}) x^2 + ({q}) x + ({r})), resenje je: ({polR[0]}) x^2 + ({polR[1]}) x + ({polR[2]})) ";
+            }
+            else
+            {
+                int a = rand.Next(2, 20);
+                int b = rand.Next(2, 20);
+                int[] polR = { a * a, 2 * a * b, b * b };
+
+                return $"Izracunaj: (({a}) x + ({b}) y)^2, resenje je: ({polR[0]}) x^2 + ({polR[1]}) xy + ({polR[2]}) y^2) ";
+            }
+        }
 
     
     }
