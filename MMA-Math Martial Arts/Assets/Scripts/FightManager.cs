@@ -34,9 +34,12 @@ public class FightManager : MonoBehaviour
     [SerializeField]
     Questions q;
 
+
     private void Start()
     {
+
         setNewRound();
+        
     }
     private void Update()
     {
@@ -48,9 +51,6 @@ public class FightManager : MonoBehaviour
         {
             p2TimeForAnswer += Time.deltaTime;
         }
-
-       
-
     }
     private void setQuestion()
     {
@@ -96,45 +96,46 @@ public class FightManager : MonoBehaviour
 
     private void setNewRound()//zapocinjemo novu rundu
     {
-        if (p1Health <= 0)
-        {
-            p1Animator.SetTrigger("Fall");
-            p2Animator.SetTrigger("Win");
-        }
-        else if (p2Health <= 0)
-        {
-            p1Animator.SetTrigger("Win");
-            p2Animator.SetTrigger("Fall");
-        }
-        else
-        {
-            correctButtonIndex = Random.Range(0, buttons.Length);
-            for (int i = 0; i < buttons.Length; i++)
+              if (p1Health <= 0)
             {
-                int buttonIndex = i;
-                buttons[i].onClick.RemoveAllListeners();//brise svaki listenera sa buttna
+                p1Animator.SetTrigger("Fall");
+                p2Animator.SetTrigger("Win");
             }
-
-            if (p1)
+            else if (p2Health <= 0)
             {
-                addingEventListeners("P1");
+                p1Animator.SetTrigger("Win");
+                p2Animator.SetTrigger("Fall");
             }
             else
             {
-                addingEventListeners("P2");
-            }
-            setQuestion();
-        }
-    }
+                correctButtonIndex = Random.Range(0, buttons.Length);
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    int buttonIndex = i;
+                    buttons[i].onClick.RemoveAllListeners();//brise svaki listenera sa buttna
+                }
 
-    void addingEventListeners(string player)
-    {
-        for (int i = 0; i < buttons.Length; i++)
-        {
-            int buttonIndex = i;
-            buttons[i].onClick.AddListener(() => OnButtonPress(buttonIndex, player)); // Dodaj listener na svaki onclick na dugme
-            p1TimeForAnswer += Time.deltaTime;
+                if (p1)
+                {
+                    addingEventListeners("P1");
+                }
+                else
+                {
+                    addingEventListeners("P2");
+                }
+                setQuestion();
+            }
         }
+
+        void addingEventListeners(string player)
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                int buttonIndex = i;
+                buttons[i].onClick.AddListener(() => OnButtonPress(buttonIndex, player)); // Dodaj listener na svaki onclick na dugme
+                p1TimeForAnswer += Time.deltaTime;
+            }
+        
     }
 
     // Poziva se svaki put kad kliknes
