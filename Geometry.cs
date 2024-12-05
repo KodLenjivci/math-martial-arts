@@ -178,6 +178,7 @@ namespace DefaultNamespace
 
         //hard od 5 do 8
         //izracunaj dijagonale romba
+        
         static string CalculateRhombusDiagonals()
         {
     
