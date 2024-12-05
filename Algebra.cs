@@ -22,7 +22,7 @@ namespace DefaultNamespace
             int pump23 = rand.Next(400, cars - 200); //druga i treca pumpa
 
             //koliko automobila ima na svakoj pumpi
-            int pump2 = pump12 + pump23 - totalCars;
+            int pump2 = pump12 + pump23 - cars;
             int pump1 = pump12 - pump2;
             int pump3 = pump23 - pump2;
 
